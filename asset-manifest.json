@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/domainname/static/css/main.dcd03481.chunk.css",
-    "main.js": "/domainname/static/js/main.79f267ce.chunk.js",
-    "main.js.map": "/domainname/static/js/main.79f267ce.chunk.js.map",
-    "runtime-main.js": "/domainname/static/js/runtime-main.615ec4d9.js",
-    "runtime-main.js.map": "/domainname/static/js/runtime-main.615ec4d9.js.map",
-    "static/js/2.2f3aea34.chunk.js": "/domainname/static/js/2.2f3aea34.chunk.js",
-    "static/js/2.2f3aea34.chunk.js.map": "/domainname/static/js/2.2f3aea34.chunk.js.map",
-    "index.html": "/domainname/index.html",
-    "static/css/main.dcd03481.chunk.css.map": "/domainname/static/css/main.dcd03481.chunk.css.map",
-    "static/js/2.2f3aea34.chunk.js.LICENSE.txt": "/domainname/static/js/2.2f3aea34.chunk.js.LICENSE.txt",
-    "static/media/Logo.605b94a6.svg": "/domainname/static/media/Logo.605b94a6.svg",
-    "static/media/global.scss": "/domainname/static/media/Mali-Regular.e27c9a1a.ttf"
+    "main.css": "/kelseys-tattoos/static/css/main.cb64a0ce.chunk.css",
+    "main.js": "/kelseys-tattoos/static/js/main.79f267ce.chunk.js",
+    "main.js.map": "/kelseys-tattoos/static/js/main.79f267ce.chunk.js.map",
+    "runtime-main.js": "/kelseys-tattoos/static/js/runtime-main.3dc861fb.js",
+    "runtime-main.js.map": "/kelseys-tattoos/static/js/runtime-main.3dc861fb.js.map",
+    "static/js/2.2f3aea34.chunk.js": "/kelseys-tattoos/static/js/2.2f3aea34.chunk.js",
+    "static/js/2.2f3aea34.chunk.js.map": "/kelseys-tattoos/static/js/2.2f3aea34.chunk.js.map",
+    "index.html": "/kelseys-tattoos/index.html",
+    "static/css/main.cb64a0ce.chunk.css.map": "/kelseys-tattoos/static/css/main.cb64a0ce.chunk.css.map",
+    "static/js/2.2f3aea34.chunk.js.LICENSE.txt": "/kelseys-tattoos/static/js/2.2f3aea34.chunk.js.LICENSE.txt",
+    "static/media/Logo.605b94a6.svg": "/kelseys-tattoos/static/media/Logo.605b94a6.svg",
+    "static/media/global.scss": "/kelseys-tattoos/static/media/Mali-Regular.e27c9a1a.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.615ec4d9.js",
+    "static/js/runtime-main.3dc861fb.js",
     "static/js/2.2f3aea34.chunk.js",
-    "static/css/main.dcd03481.chunk.css",
+    "static/css/main.cb64a0ce.chunk.css",
     "static/js/main.79f267ce.chunk.js"
   ]
 }
