@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkelseys_tattoos_gatsby=self.webpackChunkkelseys_tattoos_gatsby||[]).push([[25],{4037:function(e,t,s){s.r(t),s.d(t,{default:function(){return l}});var a=s(7294),n=s(5596),o=s(2171),r=s(5467);function l(){return a.createElement(n.Z,{className:"Portfolio"},a.createElement(o.Z,{heading:"Portfolio",image:r.Z}))}}}]);
+//# sourceMappingURL=component---src-pages-portfolio-js-9244b0e6238012bcb610.js.map

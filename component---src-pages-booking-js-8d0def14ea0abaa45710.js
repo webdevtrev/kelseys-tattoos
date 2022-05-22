@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkelseys_tattoos_gatsby=self.webpackChunkkelseys_tattoos_gatsby||[]).push([[314],{7538:function(e,t,n){n.r(t),n.d(t,{default:function(){return c}});var s=n(7294),a=n(5596),o=n(2171),u=n(5467);function c(){return s.createElement(a.Z,{className:"Booking"},s.createElement(o.Z,{heading:"Booking",image:u.Z}))}}}]);
+//# sourceMappingURL=component---src-pages-booking-js-8d0def14ea0abaa45710.js.map

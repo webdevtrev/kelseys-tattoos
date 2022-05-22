@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkelseys_tattoos_gatsby=self.webpackChunkkelseys_tattoos_gatsby||[]).push([[678],{957:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});var s=n(294);function a(){return s.createElement("div",{className:"Home-Container"},s.createElement("h1",null,"Home"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-edd0d1141f282b66d575.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkelseys_tattoos_gatsby=self.webpackChunkkelseys_tattoos_gatsby||[]).push([[844],{8897:function(e,t,a){a.r(t),a.d(t,{default:function(){return u}});var s=a(7294),n=a(5596),c=a(2171),r=a(5467);function u(){return s.createElement(n.Z,{className:"Privacy"},s.createElement(c.Z,{heading:"Privacy",image:r.Z}))}}}]);
+//# sourceMappingURL=component---src-pages-privacy-js-d3895a3a609c1737b223.js.map
