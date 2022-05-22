@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+.Banner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .Headings,
+  .Image {
+    width: 100%;
+    @media screen and(min-width: 700px) {
+      width: 50%;
+    }
+  }
+  .Image {
+    position: relative;
+    &-Overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(rgba($background, 0) 0%, $background 70%);
+    }
+    img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+    }
+  }
+}

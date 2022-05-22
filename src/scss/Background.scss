@@ -1,0 +1,6 @@
+@import '../variables.scss';
+.Background {
+  &-Dark {
+    background-color: $background;
+  }
+}

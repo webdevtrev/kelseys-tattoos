@@ -1,0 +1,54 @@
+@import '../variables.scss';
+
+@font-face {
+  font-family: 'Mali';
+  src: url('./assets/Mali-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mali';
+  src: url('./assets/Mali-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Mali';
+  font-size: 16px;
+  color: $body;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+
+h1,
+h2,
+.Heading {
+  color: $heading;
+  font-weight: bold;
+}
+h3,
+.Subheading {
+  color: $subheading;
+  font-weight: bold;
+}
+
+p {
+  color: $body;
+}
+
+a,
+.Link {
+  color: $link;
+  &:hover,
+  &:focus {
+    color: $linkHover;
+  }
+}

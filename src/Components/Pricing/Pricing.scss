@@ -1,0 +1,112 @@
+@import '../../variables.scss';
+.Pricing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  .Visual,
+  .Controls {
+    width: 100%;
+    @media screen and(min-width: 700px) {
+      width: 50%;
+    }
+  }
+  .Visual {
+    background: radial-gradient($grey 70%, rgba($grey, 0) 0%);
+    background-image: url('../../images/Hand.svg');
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    min-width: 300px;
+    position: relative;
+    margin-bottom: 31px;
+    .Tattoo {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      transition: 1s;
+      border: 3px dashed $blueJeans;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        stroke: $black;
+        fill: $grey;
+        width: 80%;
+        stroke-width: 4;
+      }
+      &.Palm {
+        top: 50%;
+        left: 50%;
+        margin-top: 50px;
+        height: 150px;
+        width: 150px;
+      }
+      &.Hand {
+        top: 50%;
+        left: 50%;
+        height: 250px;
+        width: 250px;
+      }
+      &.Color {
+        &-0 {
+          #Layer_1-2 path {
+            fill: $grey;
+          }
+        }
+        &-1 {
+          #Center {
+            fill: $black;
+          }
+        }
+        &-2 {
+          #Pedals {
+            fill: $orange;
+          }
+          #Center {
+            fill: $black;
+          }
+        }
+        &-3 {
+          #Pedals {
+            fill: $orange;
+          }
+          #Layer_1-2 path {
+            fill: $blueJeans;
+          }
+          #Center {
+            fill: $black;
+          }
+        }
+      }
+    }
+    .Price {
+      position: absolute;
+      right: 50%;
+      top: 100%;
+      transform: translate(50%, 0);
+      margin: 0;
+    }
+  }
+  .Controls {
+    .Buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      .Button {
+        min-width: 150px;
+        width: 33%;
+      }
+      .Active {
+        border: 2px solid transparent;
+        background-color: $blueJeans;
+        color: black;
+      }
+    }
+    .Disclaimer {
+      color: $primary;
+      margin-top: 2em;
+    }
+  }
+}

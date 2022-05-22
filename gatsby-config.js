@@ -1,7 +1,9 @@
 module.exports = {
+  pathPrefix: '/kelseys-tattoos',
   siteMetadata: {
-    title: `kelseys-tattoos-gatsby`,
     siteUrl: `https://www.yourdomain.tld`,
+    title: `Kelsey's Tattoos`,
+    description: 'A cool site for Kelsey to recieve bookings on',
   },
-  plugins: [],
-}
+  plugins: [`gatsby-plugin-sass`, 'gatsby-plugin-react-helmet'],
+};

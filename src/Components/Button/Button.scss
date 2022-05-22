@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+.Button {
+  background-color: transparent;
+  border: 2px solid #b0b0b0;
+  color: #b0b0b0;
+
+  font-family: 'Mali';
+  cursor: pointer;
+
+  padding: 0.5em 1em;
+
+  &:hover,
+  &:focus {
+    border: 2px solid transparent;
+    background-color: $blueJeans;
+    color: black;
+  }
+}

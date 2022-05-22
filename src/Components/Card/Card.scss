@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+.Card {
+  display: inline-block;
+  border: 3px solid $border;
+  border-radius: 20px;
+  padding: 1em;
+  .Title {
+    display: flex;
+    align-items: center;
+    .Icon {
+      color: $primary;
+      height: 40px;
+      margin-right: 0.5em;
+    }
+    h3 {
+      margin: 0;
+    }
+  }
+}

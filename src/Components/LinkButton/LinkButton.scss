@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+.LinkButton {
+  font-weight: bold;
+  background-color: $linkButton;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  &,
+  &:visited {
+    color: $white;
+  }
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $linkButtonHover;
+  }
+}
