@@ -12,7 +12,7 @@ import './Banner.scss';
  */
 export default function Banner({ heading, subheading, image, alt }) {
   return (
-    <div className='Banner Inner-Frame'>
+    <section className='Banner Inner-Frame'>
       <div className='Headings'>
         {heading && <h1>{heading}</h1>}
         {subheading && <h3>{subheading}</h3>}
@@ -23,6 +23,6 @@ export default function Banner({ heading, subheading, image, alt }) {
           <img src={image} alt={alt} />
         </div>
       )}
-    </div>
+    </section>
   );
 }

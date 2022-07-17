@@ -1,9 +1,16 @@
 @import './scss/Background.scss';
 @import './scss/Layout.scss';
 @import './scss/Typography.scss';
-
+@import './variables.scss';
 html,
 body {
   margin: 0;
   box-sizing: border-box;
+  background-color: $background;
+}
+section {
+  padding: 3em 0;
+  &:last-child {
+    padding-bottom: 5em;
+  }
 }

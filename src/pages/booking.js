@@ -4,7 +4,8 @@ import React from 'react';
 import Layout from '../Components/Layout/layout';
 import Banner from '../Components/Banner/Banner';
 
-import bannerImage from '../images/placeholder.png';
+import { PortableText } from '@portabletext/react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 /**
  * @namespace Booking
@@ -15,9 +16,60 @@ import bannerImage from '../images/placeholder.png';
  * @component
  */
 export default function Booking() {
+  const data = useStaticQuery(graphql`
+    query bookingQuery {
+      allSanityBooking {
+        nodes {
+          banner {
+            headline
+            image {
+              image {
+                hotspot {
+                  y
+                  x
+                }
+                asset {
+                  url
+                }
+              }
+              alt
+            }
+            _rawSubheadline
+          }
+        }
+      }
+    }
+  `);
+  const banner = data?.allSanityBooking?.nodes[0].banner;
   return (
     <Layout className='Booking'>
-      <Banner heading='Booking' image={bannerImage} />
+      <Banner
+        heading={banner?.headline}
+        subheading={<PortableText value={banner?._rawSubheadline} />}
+        image={banner?.image.image.asset.url}
+        alt={banner?.image.alt}
+        imagePos={banner?.image.image.hotspot}
+      />
+      <section className='Inner-Frame'>
+        <form>
+          <label>
+            First Name
+            <input type='text' required />
+          </label>
+          <label>
+            Email
+            <input type='text' required />
+          </label>
+          <label>
+            Placement
+            <input type='text' required />
+          </label>
+          <label>
+            Additional Comments
+            <textarea required />
+          </label>
+        </form>
+      </section>
     </Layout>
   );
 }

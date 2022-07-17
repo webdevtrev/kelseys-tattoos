@@ -4,7 +4,8 @@ import React from 'react';
 import Layout from '../Components/Layout/layout';
 import Banner from '../Components/Banner/Banner';
 
-import bannerImage from '../images/placeholder.png';
+import { PortableText } from '@portabletext/react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 /**
  * @namespace Portfolio
@@ -15,9 +16,40 @@ import bannerImage from '../images/placeholder.png';
  * @component
  */
 export default function Portfolio() {
+  const data = useStaticQuery(graphql`
+    query portfolioQuery {
+      allSanityPortfolio {
+        nodes {
+          banner {
+            headline
+            image {
+              image {
+                hotspot {
+                  y
+                  x
+                }
+                asset {
+                  url
+                }
+              }
+              alt
+            }
+            _rawSubheadline
+          }
+        }
+      }
+    }
+  `);
+  const banner = data?.allSanityPortfolio?.nodes[0].banner;
   return (
     <Layout className='Portfolio'>
-      <Banner heading='Portfolio' image={bannerImage} />
+      <Banner
+        heading={banner?.headline}
+        subheading={<PortableText value={banner?._rawSubheadline} />}
+        image={banner?.image.image.asset.url}
+        alt={banner?.image.alt}
+        imagePos={banner?.image.image.hotspot}
+      />
     </Layout>
   );
 }

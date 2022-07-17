@@ -10,14 +10,14 @@ import './Card.scss';
  * @version 1.0.0
  * @component
  */
-export default function Card({ Icon, title, body }) {
+export default function Card({ Icon, title, children }) {
   return (
     <div className='Card'>
       <div className='Title'>
         {Icon && <Icon className='Icon' />}
         {title && <h3>{title}</h3>}
       </div>
-      {body && <p>{body}</p>}
+      {children}
     </div>
   );
 }

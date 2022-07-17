@@ -1,0 +1,21 @@
+.Index {
+  .Cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .Card {
+      width: 400px;
+
+      .Schedule {
+        display: flex;
+        justify-content: space-between;
+        max-width: 300px;
+        margin: auto;
+        .Day {
+        }
+        .Hours {
+        }
+      }
+    }
+  }
+}
