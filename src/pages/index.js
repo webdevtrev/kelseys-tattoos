@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 
-import Layout from '../Components/Layout/layout';
+import Layout from '../Components/Layout/Layout';
 import Banner from '../Components/Banner/Banner';
 import Card from '../Components/Card/Card';
 import Pricing from '../Components/Pricing/Pricing';

@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.scss';
 
-import Layout from '../Components/Layout/layout';
+import Layout from '../Components/Layout/Layout';
 import Banner from '../Components/Banner/Banner';
 
 import { PortableText } from '@portabletext/react';
