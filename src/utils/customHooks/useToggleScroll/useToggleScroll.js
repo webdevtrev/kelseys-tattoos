@@ -2,11 +2,15 @@ import { useEffect } from 'react';
 import { isIosDevice } from '../../isIosDevice/isIosDevice';
 
 export function useToggleScroll(disable) {
+  let html, body, scrollPosition;
+  if (typeof window !== 'undefined') {
+    html = document?.querySelector('html');
+    body = document?.body;
+    scrollPosition = html?.scrollTop;
+  }
+
   useEffect(() => {
-    const html = document?.querySelector('html');
-    const body = document?.body;
-    const scrollPosition = html.scrollTop;
-    if (disable) {
+    if (disable && html && body) {
       if (isIosDevice) {
         html.style.position = 'fixed';
         html.style.width = '100%';
