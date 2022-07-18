@@ -2,9 +2,12 @@
   .Cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 2rem;
     .Card {
-      width: 400px;
+      width: calc(50% - 1rem);
+      min-width: 275px;
+      max-width: 400px;
 
       .Schedule {
         display: flex;
