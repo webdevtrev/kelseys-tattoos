@@ -52,11 +52,12 @@ export default function Booking() {
       />
       <section className='Inner-Frame'>
         <form
-          name='contact'
+          // name='contact'
           method='POST'
-          action='/booking/'
+          action='/booking'
           data-netlify='true'
         >
+          <input type='hidden' name='form-name' value='contactForm' />
           <p>
             <label>
               Your Name: <input type='text' name='name' />
