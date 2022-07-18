@@ -54,7 +54,7 @@ export default function Booking() {
         <form
           name='contact'
           method='POST'
-          action='/booking'
+          action='/booking/'
           data-netlify='true'
         >
           <p>
