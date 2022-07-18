@@ -10,9 +10,13 @@ import './Button.scss';
  * @version 1.0.0
  * @component
  */
-export default function Button({ onClick, className, children }) {
+export default function Button({ onClick, className, children, submit }) {
   return (
-    <button onClick={onClick} className={`Button ${className}`}>
+    <button
+      onClick={onClick}
+      className={`Button ${className}`}
+      type={submit ? 'submit' : null}
+    >
       {children}
     </button>
   );

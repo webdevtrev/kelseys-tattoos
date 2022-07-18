@@ -15,7 +15,7 @@ import Banner from '../Components/Banner/Banner';
 export default function Thanks() {
   return (
     <Layout className='Thanks'>
-      <Banner heading='Thanks' />
+      <Banner heading='Thank you for reaching out!' />
     </Layout>
   );
 }

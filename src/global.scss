@@ -5,8 +5,10 @@
 html,
 body {
   margin: 0;
-  box-sizing: border-box;
   background-color: $background;
+}
+* {
+  box-sizing: border-box;
 }
 section {
   padding: 3em 0;

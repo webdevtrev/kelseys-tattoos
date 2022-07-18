@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 20px;
+  > label {
+    width: 100%;
+    @media screen and (min-width: 800px) {
+      width: calc(50% - 0.5rem);
+    }
+    > input,
+    textarea {
+      font-family: 'Mali';
+      width: 100%;
+      font-size: 20px;
+      background-color: $background;
+      color: $body;
+      padding: 0.25rem;
+      border: 3px solid $body;
+    }
+  }
+  .Input {
+    &-Checkbox {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  }
+}

@@ -17,7 +17,7 @@ export default function Footer() {
           <div className='Links-Container'>
             <span>Navigation</span>
             <Link to='/'>Home</Link>
-            <Link to='/portfolio'>Portfolio</Link>
+            {/* <Link to='/portfolio'>Portfolio</Link> */}
             <Link to='/about'>About</Link>
             <Link to='/booking'>Booking</Link>
           </div>
