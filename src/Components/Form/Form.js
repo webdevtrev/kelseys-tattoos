@@ -170,7 +170,8 @@ export default function Form({ availability }) {
           if (!availability[day.toLowerCase()].off) {
             return (
               <label key={day} className='Input-Checkbox'>
-                {day}
+                {day} {availability?.[day.toLowerCase()]?.start} -{' '}
+                {availability?.[day.toLowerCase()]?.end}
                 <input type='checkbox' value={day} onChange={handleChange} />
               </label>
             );
