@@ -6,7 +6,7 @@ import Banner from '../Components/Banner/Banner';
 import Card from '../Components/Card/Card';
 import Pricing from '../Components/Pricing/Pricing';
 
-import { ReactComponent as Icon } from '../images/clock.svg';
+import { ReactComponent as Icon } from '../images/Clock.svg';
 
 import { PortableText } from '@portabletext/react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
