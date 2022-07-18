@@ -54,9 +54,7 @@ export default function Booking() {
         <form
           name='contact'
           method='POST'
-          onSubmit={(e) => {
-            e.preventDefault();
-          }}
+          action='/pages/booking'
           data-netlify='true'
         >
           <p>
