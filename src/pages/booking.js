@@ -51,23 +51,29 @@ export default function Booking() {
         imagePos={banner?.image.image.hotspot}
       />
       <section className='Inner-Frame'>
-        <form>
+        <form netlify>
+          <input
+            type='hidden'
+            name='subject'
+            value="New message from dev site of Kelsey's Tattoos"
+          />
           <label>
             First Name
-            <input type='text' required />
+            <input type='text' required name='First Name' />
           </label>
           <label>
             Email
-            <input type='text' required />
+            <input type='text' required name='Email' />
           </label>
           <label>
             Placement
-            <input type='text' required />
+            <input type='text' required name='Placement' />
           </label>
           <label>
             Additional Comments
-            <textarea required />
+            <textarea required name='Comments' />
           </label>
+          <button type='submit'>Send</button>
         </form>
       </section>
     </Layout>
