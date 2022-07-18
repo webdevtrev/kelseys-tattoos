@@ -51,7 +51,14 @@ export default function Booking() {
         imagePos={banner?.image.image.hotspot}
       />
       <section className='Inner-Frame'>
-        <form name='contact' method='POST' data-netlify='true'>
+        <form
+          name='contact'
+          method='POST'
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+          data-netlify='true'
+        >
           <p>
             <label>
               Your Name: <input type='text' name='name' />
