@@ -51,7 +51,7 @@ export default function Booking() {
         imagePos={banner?.image.image.hotspot}
       />
       <section className='Inner-Frame'>
-        <form name='Contact' method='POST' data-netlify='true'>
+        <form name='Contact' method='POST' netlify data-netlify='true'>
           <input type='hidden' name='form-name' value='contact' />
           <input
             type='hidden'
