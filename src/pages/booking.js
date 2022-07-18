@@ -6,6 +6,13 @@ import Banner from '../Components/Banner/Banner';
 
 import { PortableText } from '@portabletext/react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { navigate } from 'gatsby-link';
+
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
 
 /**
  * @namespace Booking
