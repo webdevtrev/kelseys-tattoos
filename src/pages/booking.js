@@ -52,6 +52,7 @@ export default function Booking() {
       />
       <section className='Inner-Frame'>
         <form name='Contact' method='POST' data-netlify='true'>
+          <input type='hidden' name='form-name' value='contact' />
           <input
             type='hidden'
             name='subject'
