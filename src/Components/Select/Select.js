@@ -13,7 +13,7 @@ import Select from 'react-select';
  * @version 1.0.0
  * @component
  */
-export default function SelectDropdown({ handleChange, options, onChange }) {
+export default function SelectDropdown({ options, onChange, name }) {
   const customStyles = {
     dropdownIndicator: (provided, state) => ({
       ...provided,
@@ -58,6 +58,7 @@ export default function SelectDropdown({ handleChange, options, onChange }) {
   };
   return (
     <Select
+      name={name}
       onChange={(e) => {
         onChange(e, 'Size');
       }}

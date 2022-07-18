@@ -36,7 +36,7 @@ export default function Form({ availability }) {
 
   const handleChange = (e, selectKey) => {
     if (selectKey) {
-      console.log(e, selectKey);
+      setState({ ...state, [selectKey]: e.value });
     } else if (e.target.type === 'checkbox') {
       const key = e.target.parentNode.parentNode.getAttribute('data-name');
       const values = state?.[key] !== '' && state?.[key]?.split(', ');
@@ -115,6 +115,7 @@ export default function Form({ availability }) {
       <label>
         Size
         <Select
+          name='size'
           options={[
             {
               value: '2-4 Inches',
@@ -166,6 +167,7 @@ export default function Form({ availability }) {
       </label>
       <label data-name='availability'>
         Availability
+        <input type='hidden' name={'availability'} />
         {days.map((day) => {
           if (!availability[day.toLowerCase()].off) {
             return (
