@@ -55,12 +55,7 @@ export default function About() {
         imagePos={banner?.image.image.hotspot}
       />
       <section className='Inner-Frame'>
-        <h2>Professional</h2>
         <PortableText value={professional} />
-      </section>
-      <section className='Inner-Frame'>
-        <h2>Personal</h2>
-        <PortableText value={personal} />
       </section>
     </Layout>
   );
