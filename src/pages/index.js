@@ -6,6 +6,8 @@ import Banner from '../Components/Banner/Banner';
 import Card from '../Components/Card/Card';
 import Pricing from '../Components/Pricing/Pricing';
 
+import { isIosDevice } from '../utils/isIosDevice/isIosDevice';
+
 import { ReactComponent as Icon } from '../images/Clock.svg';
 
 import { PortableText } from '@portabletext/react';
@@ -108,6 +110,12 @@ export default function Index() {
   const design = data?.allSanityHome?.nodes[0].design;
   const availability = data?.allSanityHome?.nodes[0].availability;
   const location = data?.allSanityHome?.nodes[0].location;
+  const ios = isIosDevice();
+  console.log(
+    ios
+      ? 'https://maps.apple.com/?daddr=3551+E+Main+St,+Richmond,+IN+47374'
+      : 'https://www.google.com/maps/dir/?api=1&destination=3551+E+Main+St,+Richmond,+IN+47374'
+  );
   return (
     <Layout className='Index'>
       <Banner
@@ -144,7 +152,20 @@ export default function Index() {
           })}
         </Card>
         <Card Icon={Icon} title='Location'>
-          <p>{location?.text}</p>
+          <p>
+            {location?.text},{' '}
+            <a
+              href={
+                ios
+                  ? 'https://maps.apple.com/?daddr=3551+E+Main+St,+Richmond,+IN+47374'
+                  : 'https://www.google.com/maps/dir/?api=1&destination=3551+E+Main+St,+Richmond,+IN+47374'
+              }
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              3551 E Main St, Richmond, IN 47374
+            </a>
+          </p>
         </Card>
       </section>
       <section className='Inner-Frame'>
