@@ -1,0 +1,116 @@
+{
+    "@portabletext/react@1.0.6": {
+        "licenses": "MIT",
+        "repository": "https://github.com/portabletext/react-portabletext",
+        "licenseUrl": "https://github.com/portabletext/react-portabletext/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "@storybook/preset-scss@1.0.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/storybookjs/presets",
+        "licenseUrl": "https://github.com/storybookjs/presets",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "@svgr/webpack@6.2.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/gregberge/svgr/tree/master/packages/webpack",
+        "licenseUrl": "https://github.com/gregberge/svgr/tree/master/packages/webpack/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "gatsby-plugin-netlify@5.0.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/netlify/gatsby-plugin-netlify",
+        "licenseUrl": "https://github.com/netlify/gatsby-plugin-netlify",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "gatsby-plugin-react-helmet@5.14.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/gatsbyjs/gatsby",
+        "licenseUrl": "https://github.com/gatsbyjs/gatsby/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "gatsby-plugin-sanity-image@0.11.0": {
+        "licenses": "MPL-2.0",
+        "repository": "https://github.com/coreyward/gatsby-plugin-sanity-image",
+        "licenseUrl": "https://github.com/coreyward/gatsby-plugin-sanity-image/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "gatsby-plugin-sass@5.14.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/gatsbyjs/gatsby",
+        "licenseUrl": "https://github.com/gatsbyjs/gatsby/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "gatsby-plugin-sitemap@5.18.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/gatsbyjs/gatsby",
+        "licenseUrl": "https://github.com/gatsbyjs/gatsby/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "gatsby-plugin-svgr@3.0.0-beta.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/zabute/gatsby-plugin-svgr",
+        "licenseUrl": "https://github.com/zabute/gatsby-plugin-svgr/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "gatsby-source-sanity@7.4.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sanity-io/gatsby-source-sanity",
+        "licenseUrl": "https://github.com/sanity-io/gatsby-source-sanity",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "gatsby@4.14.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/gatsbyjs/gatsby",
+        "licenseUrl": "https://github.com/gatsbyjs/gatsby/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "rc-select@14.1.9": {
+        "licenses": "MIT",
+        "repository": "https://github.com/react-component/select",
+        "licenseUrl": "https://github.com/react-component/select/raw/master/LICENSE.md",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "react-dom@17.0.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/facebook/react",
+        "licenseUrl": "https://github.com/facebook/react/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "react-hamburger-menu@1.2.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/cameronbourke/react-hamburger-menu",
+        "licenseUrl": "https://github.com/cameronbourke/react-hamburger-menu/raw/master/LICENSE.md",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "react-helmet@6.1.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/nfl/react-helmet",
+        "licenseUrl": "https://github.com/nfl/react-helmet/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "react-icons@4.3.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com:react-icons/react-icons",
+        "licenseUrl": "https://github.com:react-icons/react-icons/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "react-select@5.4.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/JedWatson/react-select/tree/master/packages/react-select",
+        "licenseUrl": "https://github.com/JedWatson/react-select/tree/master/packages/react-select",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "react@17.0.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/facebook/react",
+        "licenseUrl": "https://github.com/facebook/react/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    },
+    "sass@1.52.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sass/dart-sass",
+        "licenseUrl": "https://github.com/sass/dart-sass/raw/master/LICENSE",
+        "parents": "kelseys-tattoos-gatsby"
+    }
+}
