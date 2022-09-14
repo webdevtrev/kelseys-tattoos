@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import './Footer.scss';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { GrMail } from 'react-icons/gr';
 /**
  * @namespace Footer
  * @function Footer
@@ -10,6 +12,30 @@ import './Footer.scss';
  * @component
  */
 export default function Footer() {
+  const data = useStaticQuery(graphql`
+    query footerQuery {
+      allSanitySocials {
+        nodes {
+          instagram {
+            show
+            link
+            Title
+          }
+          facebook {
+            show
+            link
+            Title
+          }
+          email {
+            show
+            link
+            Title
+          }
+        }
+      }
+    }
+  `);
+  const socials = data?.allSanitySocials?.nodes?.[0];
   return (
     <div className='Footer'>
       <div className='Inner-Frame Footer-Container'>
@@ -25,21 +51,28 @@ export default function Footer() {
         <div className='Socials'>
           <div className='Socials-Container'>
             <span>Socials</span>
-            <a href='mailto:test@gmail.com'>kelseystattoos@gmail.com</a>
-            <a
-              href='https://www.instagram.com/kelseystattoos/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              kelseystattoos
-            </a>
-            <a
-              href='https://www.instagram.com/kelseystattoos/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              facebook
-            </a>
+            {socials?.email?.show && (
+              <a href={`mailto:${socials.email?.link}`}>
+                <GrMail />
+                {socials.email?.Title}
+              </a>
+            )}
+            {socials?.instagram?.show && (
+              <a
+                href={socials.instagram?.link}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaInstagram />
+                {socials.instagram?.Title}
+              </a>
+            )}
+            {socials?.facebook?.show && (
+              <a href={socials.facebook?.link} target='_blank' rel='noreferrer'>
+                <FaFacebook />
+                {socials.facebook?.Title}
+              </a>
+            )}
           </div>
         </div>
       </div>
