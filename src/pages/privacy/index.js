@@ -4,8 +4,6 @@ import React from 'react';
 import Layout from '../../Components/Layout/Layout';
 import Banner from '../../Components/Banner/Banner';
 
-import bannerImage from '../../images/Placeholder.png';
-
 /**
  * @namespace Privacy
  * @function Privacy

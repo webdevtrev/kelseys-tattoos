@@ -47,6 +47,7 @@ export default function Footer() {
         <div>Built and Designed by webdevtrev</div>
         <div>Copyright 2022</div>
         <Link to='/privacy'>Privacy Policy</Link>
+        <Link to='/licenses'>Licenses</Link>
       </div>
     </div>
   );
