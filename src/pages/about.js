@@ -36,7 +36,6 @@ export default function About() {
             }
             _rawSubheadline
           }
-          _rawPersoanl
           _rawProffesional
         }
       }
@@ -44,7 +43,6 @@ export default function About() {
   `);
   const banner = data?.allSanityAbout?.nodes[0].banner;
   const professional = data?.allSanityAbout?.nodes[0]._rawProffesional;
-  const personal = data?.allSanityAbout?.nodes[0]._rawPersoanl;
   return (
     <Layout className='About'>
       <Banner
