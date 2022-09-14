@@ -1,9 +1,9 @@
 import React from 'react';
 import './booking.scss';
 
-import Layout from '../Components/Layout/Layout';
-import Banner from '../Components/Banner/Banner';
-import Form from '../Components/Form/Form';
+import Layout from '../../Components/Layout/Layout';
+import Banner from '../../Components/Banner/Banner';
+import Form from '../../Components/Form/Form';
 
 import { PortableText } from '@portabletext/react';
 import { graphql, useStaticQuery } from 'gatsby';

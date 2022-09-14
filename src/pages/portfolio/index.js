@@ -1,24 +1,24 @@
 import React from 'react';
-import './about.scss';
+// import './index.scss';
 
-import Layout from '../Components/Layout/Layout';
-import Banner from '../Components/Banner/Banner';
+import Layout from '../../Components/Layout/Layout';
+import Banner from '../../Components/Banner/Banner';
 
 import { PortableText } from '@portabletext/react';
 import { graphql, useStaticQuery } from 'gatsby';
 
 /**
- * @namespace About
- * @function About
+ * @namespace Portfolio
+ * @function Portfolio
  * @author Trevor Cash
  * @since 10/02/21
  * @version 1.0.0
  * @component
  */
-export default function About() {
+export default function Portfolio() {
   const data = useStaticQuery(graphql`
-    query aboutQuery {
-      allSanityAbout {
+    query portfolioQuery {
+      allSanityPortfolio {
         nodes {
           banner {
             headline
@@ -36,15 +36,13 @@ export default function About() {
             }
             _rawSubheadline
           }
-          _rawProffesional
         }
       }
     }
   `);
-  const banner = data?.allSanityAbout?.nodes[0].banner;
-  const professional = data?.allSanityAbout?.nodes[0]._rawProffesional;
+  const banner = data?.allSanityPortfolio?.nodes[0].banner;
   return (
-    <Layout className='About'>
+    <Layout className='Portfolio'>
       <Banner
         heading={banner?.headline}
         subheading={<PortableText value={banner?._rawSubheadline} />}
@@ -52,9 +50,6 @@ export default function About() {
         alt={banner?.image.alt}
         imagePos={banner?.image.image.hotspot}
       />
-      <section className='Inner-Frame'>
-        <PortableText value={professional} />
-      </section>
     </Layout>
   );
 }

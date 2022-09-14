@@ -1,10 +1,10 @@
 import React from 'react';
 // import './index.scss';
 
-import Layout from '../Components/Layout/Layout';
-import Banner from '../Components/Banner/Banner';
+import Layout from '../../Components/Layout/Layout';
+import Banner from '../../Components/Banner/Banner';
 
-import bannerImage from '../images/Placeholder.png';
+import bannerImage from '../../images/Placeholder.png';
 
 /**
  * @namespace Privacy
