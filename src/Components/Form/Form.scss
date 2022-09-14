@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-form {
+.Form-Container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -31,4 +31,10 @@ form {
       padding: 0.25rem;
     }
   }
+}
+.Thank-You-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
 }

@@ -33,6 +33,7 @@ const days = [
  */
 export default function Form({ availability }) {
   const [state, setState] = useState({});
+  const [submitted, setSubmitted] = useState(true);
 
   const handleChange = (e, selectKey) => {
     if (selectKey) {
@@ -72,17 +73,17 @@ export default function Form({ availability }) {
         ...state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      .then(() => setSubmitted(true))
       .catch((error) => alert(error));
   };
-  return (
+  return !submitted ? (
     <form
       name='contact'
       method='post'
-      action='/thanks/'
       data-netlify='true'
       data-netlify-honeypot='bot-field'
       onSubmit={handleSubmit}
+      className='Form-Container'
     >
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type='hidden' name='form-name' value='contact' />
@@ -188,5 +189,9 @@ export default function Form({ availability }) {
       </label>
       <Button submit>Send</Button>
     </form>
+  ) : (
+    <div className='Thank-You-Text'>
+      Thank you for reaching out, I will get back with you shortly.
+    </div>
   );
 }
