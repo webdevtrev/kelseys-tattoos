@@ -5,7 +5,6 @@ import Select from '../Select/Select';
 import Button from '../Button/Button';
 
 import { sortDaysArray } from '../../utils/sortDaysArray/sortDaysArray';
-import { navigate } from 'gatsby-link';
 
 function encode(data) {
   return Object.keys(data)

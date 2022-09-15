@@ -6,20 +6,28 @@
   .Visual,
   .Controls {
     width: 100%;
-    @media screen and(min-width: 700px) {
+    @media screen and (min-width: 700px) {
       width: 50%;
     }
   }
   .Visual {
-    background: radial-gradient($grey 70%, rgba($grey, 0) 0%);
-    background-image: url('../../images/Hand.svg');
-    background-size: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background: radial-gradient($grey 70%, rgba($grey, 0) 0%);
+    // background-image: url('../../images/Hand.svg');
+    // background-size: 300px;
+    // background-position: center;
+    // background-repeat: no-repeat;
     min-height: 300px;
     min-width: 300px;
     position: relative;
     margin-bottom: 31px;
+    .Hand-Background {
+      position: absolute;
+      width: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+    }
     .Tattoo {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -29,6 +37,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 10;
       svg {
         stroke: $black;
         fill: $grey;

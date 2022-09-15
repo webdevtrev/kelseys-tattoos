@@ -17,7 +17,7 @@ module.exports = {
         svgo: false, // use svgo to optimize SVGs (default)
         svgoConfig: {
           plugins: [
-            { removeViewBox: true }, // remove viewBox when possible (default)
+            { removeViewBox: false }, // remove viewBox when possible (default)
             { cleanupIDs: false }, // remove unused IDs and minify remaining IDs (default)
           ],
         },

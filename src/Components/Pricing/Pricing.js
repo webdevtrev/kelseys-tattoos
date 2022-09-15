@@ -1,8 +1,9 @@
-// @ts-check
 import React, { useState } from 'react';
 import './Pricing.scss';
 import Button from '../Button/Button';
 import { ReactComponent as Tattoo } from '../../images/Tattoo.svg';
+import { ReactComponent as Hand } from '../../images/Hand.svg';
+// import hand from '../'
 
 /**
  * @namespace Pricing
@@ -19,6 +20,9 @@ export default function Pricing({ disclaimer }) {
   return (
     <div className='Pricing Inner-Frame'>
       <div className='Visual'>
+        <div className='Hand-Background'>
+          <Hand />
+        </div>
         <div
           className={`Tattoo ${size === 1 ? 'Palm' : 'Hand'} Color-${color}`}
         >
