@@ -32,7 +32,7 @@ const days = [
  */
 export default function Form({ availability }) {
   const [state, setState] = useState({});
-  const [submitted, setSubmitted] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e, selectKey) => {
     if (selectKey) {

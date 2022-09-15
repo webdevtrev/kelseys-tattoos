@@ -168,6 +168,16 @@ export default function Index() {
           </p>
         </Card>
       </section>
+      <section className='Warning Inner-Frame'>
+        <h3>
+          For service, the client must meet the following for appointments:
+        </h3>
+        <ol>
+          <li>Pay with cash</li>
+          <li>Be 18+</li>
+          <li>Have their ID on them</li>
+        </ol>
+      </section>
       <section className='Inner-Frame'>
         <h2>Pricing</h2>
         <Pricing />
