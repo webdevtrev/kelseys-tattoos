@@ -61,6 +61,7 @@ export default function Form({ availability }) {
       setState({ ...state, [e.target.name]: e.target.value });
     }
   };
+  console.log(state);
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -135,13 +136,14 @@ export default function Form({ availability }) {
             },
           ]}
           onChange={(e) => {
-            handleChange(e, 'Size');
+            handleChange(e, 'size');
           }}
         />
       </label>
       <label>
         Color
         <Select
+          name='color'
           options={[
             {
               value: 'No Color or Shading',
@@ -161,7 +163,7 @@ export default function Form({ availability }) {
             },
           ]}
           onChange={(e) => {
-            handleChange(e, 'Color');
+            handleChange(e, 'color');
           }}
         />
       </label>
