@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 // import logo from '../../images/Logo.svg';
 import './Header.scss';
 
-import logo from '../../images/Logo.svg';
+import { ReactComponent as Logo } from '../../images/Logo.svg';
 /**
  * @namespace Header
  * @function Header
@@ -17,7 +17,7 @@ import logo from '../../images/Logo.svg';
  */
 export default function Header() {
   const [open, setOpen] = useState(false);
-  useToggleScroll(open);
+  useToggleScroll(open, true);
 
   function handleClick() {
     setOpen(!open);
@@ -27,7 +27,8 @@ export default function Header() {
       <div className='Header'>
         <div className='Header-Container Inner-Frame'>
           <Link className='Logo' to='/'>
-            <img className='logo' src={logo} alt='Site name' />
+            <Logo className='logo' />
+            {/* <img className='logo' src={logo} alt='Site name' /> */}
             {/* <img className='logo' src={logo} alt='Kelseys Tattoos Logo' /> */}
           </Link>
           {/* <button className='hamburger' onClick={() => handleClick()}>

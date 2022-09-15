@@ -38,5 +38,11 @@ module.exports = {
         graphqlTag: 'default',
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-manifest',
+    //   options: {
+    //     icon: './favicon.svg',
+    //   },
+    // },
   ],
 };

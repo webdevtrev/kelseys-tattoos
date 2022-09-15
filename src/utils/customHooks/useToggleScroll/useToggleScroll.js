@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { isIosDevice } from '../../isIosDevice/isIosDevice';
 
-export function useToggleScroll(disable) {
+export function useToggleScroll(disable, header) {
   let html, body, scrollPosition;
   if (typeof window !== 'undefined') {
     html = document?.querySelector('html');
     body = document?.body;
-    scrollPosition = html?.scrollTop;
+    scrollPosition = header ? 0 : html?.scrollTop;
   }
 
   useEffect(() => {
