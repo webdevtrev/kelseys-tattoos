@@ -9,7 +9,7 @@ import './Banner.scss';
  * @version 1.0.0
  * @component
  */
-export default function Banner({ heading, subheading, image, alt }) {
+export default function Banner({ heading, subheading, image, alt, hotspot }) {
   return (
     <section className='Banner Inner-Frame'>
       <div className='Headings'>
@@ -19,7 +19,11 @@ export default function Banner({ heading, subheading, image, alt }) {
       {image && (
         <div className='Image'>
           <div className='Image-Overlay'></div>
-          <img src={image} alt={alt} />
+          <img
+            src={image}
+            alt={alt}
+            style={{ objectPosition: `${hotspot.x}% ${hotspot.y}%` }}
+          />
         </div>
       )}
     </section>

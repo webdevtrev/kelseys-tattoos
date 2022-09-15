@@ -15,8 +15,6 @@ import {
 
 import { isIosDevice } from '../utils/isIosDevice/isIosDevice';
 
-import { ReactComponent as Icon } from '../images/Clock.svg';
-
 import { PortableText } from '@portabletext/react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
@@ -130,7 +128,10 @@ export default function Index() {
         subheading={<PortableText value={banner?._rawSubheadline} />}
         image={banner?.image.image.asset.url}
         alt={banner?.image.alt}
-        imagePos={banner?.image.image.hotspot}
+        hotspot={{
+          x: banner?.image?.image?.hotspot?.x,
+          y: banner?.image?.image?.hotspot?.y,
+        }}
       />
 
       <section className='Cards Inner-Frame'>
