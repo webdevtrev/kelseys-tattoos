@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://kelseystattoos.com`,
     title: `Kelsey's Tattoos`,
     description: 'A cool site for Kelsey to recieve bookings on',
   },
@@ -38,11 +38,11 @@ module.exports = {
         graphqlTag: 'default',
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-manifest',
-    //   options: {
-    //     icon: './favicon.svg',
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: './src/images/favicon.svg',
+      },
+    },
   ],
 };

@@ -13,7 +13,7 @@ export default function Card({ Icon, title, children }) {
   return (
     <div className='Card'>
       <div className='Title'>
-        {Icon && <Icon className='Icon' />}
+        {Icon && <Icon className='Icon' title={`${title} Icon`} />}
         {title && <h3>{title}</h3>}
       </div>
       {children}

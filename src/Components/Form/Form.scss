@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   gap: 1rem;
   font-size: 20px;
+  .Required {
+    color: $primary;
+  }
   > label {
     width: 100%;
     @media screen and (min-width: 800px) {
@@ -30,6 +33,10 @@
       gap: 0.25rem;
       padding: 0.25rem;
     }
+  }
+  button {
+    font-size: 20px;
+    margin: auto;
   }
 }
 .Thank-You-Text {

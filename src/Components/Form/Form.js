@@ -94,22 +94,22 @@ export default function Form({ availability }) {
         </label>
       </p>
       <label>
-        Name:
+        Name<span className='Required'>*</span>
         <br />
-        <input type='text' name='name' onChange={handleChange} />
+        <input type='text' name='name' onChange={handleChange} required />
       </label>
       <label>
-        Email:
+        Email<span className='Required'>*</span>
         <br />
         <input type='email' name='email' onChange={handleChange} />
       </label>
       <label>
-        Design:
+        Design
         <br />
-        <input type='text' name='design' onChange={handleChange} />
+        <input type='text' name='design' onChange={handleChange} required />
       </label>
       <label>
-        Placement:
+        Placement
         <br />
         <input type='text' name='placement' onChange={handleChange} />
       </label>
@@ -184,7 +184,7 @@ export default function Form({ availability }) {
         })}
       </label>
       <label>
-        Additional Comments:
+        Additional Comments
         <br />
         <textarea name='comments' onChange={handleChange} />
       </label>

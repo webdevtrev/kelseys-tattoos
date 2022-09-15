@@ -6,6 +6,13 @@ import Banner from '../Components/Banner/Banner';
 import Card from '../Components/Card/Card';
 import Pricing from '../Components/Pricing/Pricing';
 
+import {
+  FaClock,
+  FaHandsWash,
+  FaPaintBrush,
+  FaMapMarkerAlt,
+} from 'react-icons/fa';
+
 import { isIosDevice } from '../utils/isIosDevice/isIosDevice';
 
 import { ReactComponent as Icon } from '../images/Clock.svg';
@@ -127,17 +134,17 @@ export default function Index() {
       />
 
       <section className='Cards Inner-Frame'>
-        <Card Icon={Icon} title='Trusted'>
+        <Card Icon={FaHandsWash} title='Trusted'>
           <ul>
             {trusted?.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         </Card>
-        <Card Icon={Icon} title='Designs'>
+        <Card Icon={FaPaintBrush} title='Designs'>
           <p>{design?.text}</p>
         </Card>
-        <Card Icon={Icon} title='Availability'>
+        <Card Icon={FaClock} title='Availability'>
           {DAYS.map((day) => {
             const data = availability?.[day.toLowerCase()];
             return (
@@ -151,7 +158,7 @@ export default function Index() {
             );
           })}
         </Card>
-        <Card Icon={Icon} title='Location'>
+        <Card Icon={FaMapMarkerAlt} title='Location'>
           <p>
             {location?.text},{' '}
             <a
