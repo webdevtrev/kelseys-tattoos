@@ -47,7 +47,7 @@ export default function Header() {
           />
           <div className='navagation'>
             <Link to='/'>Home</Link>
-            {/* <Link to='/portfolio'>Portfolio</Link> */}
+            <Link to='/portfolio'>Portfolio</Link>
             <Link to='/about'>About</Link>
           </div>
           <LinkButton to='/booking'>Book Now!</LinkButton>
@@ -57,9 +57,9 @@ export default function Header() {
         <Link onClick={() => setOpen(!open)} to='/'>
           Home
         </Link>
-        {/* <Link onClick={() => setOpen(!open)} to='/portfolio'>
+        <Link onClick={() => setOpen(!open)} to='/portfolio'>
           Portfolio
-        </Link> */}
+        </Link>
         <Link onClick={() => setOpen(!open)} to='/about'>
           About
         </Link>
