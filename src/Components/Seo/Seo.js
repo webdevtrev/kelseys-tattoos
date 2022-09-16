@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import metaImage from '../../images/meta.png';
 
 export default function Seo(props) {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,11 @@ export default function Seo(props) {
       <title>{title}</title>
       <meta name='decription' content={description}></meta>
       <link rel='canonical' href={url} />
+      <meta property='og:title' content={title} />
+      <meta property='og:type' content='website' />
+      <meta property='og:image' content={metaImage} />
+      <meta property='og:image:width' content='1200' />
+      <meta property='og:image:width' content='630' />
     </Helmet>
   );
 }
