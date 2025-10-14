@@ -4,7 +4,20 @@ import Button from '../Button/Button';
 import { ReactComponent as Tattoo } from '../../images/Tattoo.svg';
 import { ReactComponent as Hand } from '../../images/Hand.svg';
 // import hand from '../'
-
+const prices = {
+  palm: {
+    noColor: 80,
+    shading: 100,
+    singleColor: 150,
+    multiColor: 200,
+  },
+  hand: {
+    noColor: 150,
+    shading: 200,
+    singleColor: 250,
+    multiColor: 300,
+  },
+};
 /**
  * @namespace Pricing
  * @function Pricing
@@ -14,8 +27,8 @@ import { ReactComponent as Hand } from '../../images/Hand.svg';
  * @component
  */
 export default function Pricing({ disclaimer }) {
-  const [size, setSize] = useState(1);
-  const [color, setColor] = useState(1);
+  const [size, setSize] = useState('palm');
+  const [color, setColor] = useState('noColor');
   console.log({ size, color });
   return (
     <div className='Pricing Inner-Frame'>
@@ -24,7 +37,9 @@ export default function Pricing({ disclaimer }) {
           <Hand />
         </div>
         <div
-          className={`Tattoo ${size === 1 ? 'Palm' : 'Hand'} Color-${color}`}
+          className={`Tattoo ${
+            size === 'palm' ? 'Palm' : 'Hand'
+          } Color-${color}`}
         >
           <Tattoo />
         </div>
@@ -34,17 +49,17 @@ export default function Pricing({ disclaimer }) {
         <h3>Size</h3>
         <div className='Buttons'>
           <Button
-            className={`${size === 1 ? 'Active' : 'Inactive'}`}
+            className={`${size === 'palm' ? 'Active' : 'Inactive'}`}
             onClick={() => {
-              setSize(1);
+              setSize('palm');
             }}
           >
             Palm
           </Button>
           <Button
-            className={`${size === 2 ? 'Active' : 'Inactive'}`}
+            className={`${size === 'hand' ? 'Active' : 'Inactive'}`}
             onClick={() => {
-              setSize(2);
+              setSize('hand');
             }}
           >
             Hand
@@ -53,33 +68,33 @@ export default function Pricing({ disclaimer }) {
         <h3>Color</h3>
         <div className='Buttons'>
           <Button
-            className={`${color === 0 ? 'Active' : 'Inactive'}`}
+            className={`${color === 'noColor' ? 'Active' : 'Inactive'}`}
             onClick={() => {
-              setColor(0);
+              setColor('noColor');
             }}
           >
             No Color or Shading
           </Button>
           <Button
-            className={`${color === 1 ? 'Active' : 'Inactive'}`}
+            className={`${color === 'shading' ? 'Active' : 'Inactive'}`}
             onClick={() => {
-              setColor(1);
+              setColor('shading');
             }}
           >
             No Color with Shading
           </Button>
           <Button
-            className={`${color === 2 ? 'Active' : 'Inactive'}`}
+            className={`${color === 'singleColor' ? 'Active' : 'Inactive'}`}
             onClick={() => {
-              setColor(2);
+              setColor('singleColor');
             }}
           >
             Single Color with Shading
           </Button>
           <Button
-            className={`${color === 3 ? 'Active' : 'Inactive'}`}
+            className={`${color === 'multiColor' ? 'Active' : 'Inactive'}`}
             onClick={() => {
-              setColor(3);
+              setColor('multiColor');
             }}
           >
             Multi Colored

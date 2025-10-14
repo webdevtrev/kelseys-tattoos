@@ -58,17 +58,17 @@
         width: 250px;
       }
       &.Color {
-        &-0 {
+        &-noColor {
           #Layer_1-2 path {
             fill: $grey;
           }
         }
-        &-1 {
+        &-shading {
           #Center {
             fill: $black;
           }
         }
-        &-2 {
+        &-singleColor {
           #Pedals {
             fill: $orange;
           }
@@ -76,7 +76,7 @@
             fill: $black;
           }
         }
-        &-3 {
+        &-multiColor {
           #Pedals {
             fill: $orange;
           }
