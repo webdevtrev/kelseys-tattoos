@@ -43,7 +43,7 @@ export default function Pricing({ disclaimer }) {
         >
           <Tattoo />
         </div>
-        <h3 className='Price Heading'>Price: ${size * 100 + color * 50}</h3>
+        <h3 className='Price Heading'>Price: ${prices[size][color]}</h3>
       </div>
       <div className='Controls'>
         <h3>Size</h3>
