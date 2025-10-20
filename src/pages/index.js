@@ -165,13 +165,13 @@ export default function Index() {
             <a
               href={
                 ios
-                  ? 'https://maps.apple.com/?daddr=3551+E+Main+St,+Richmond,+IN+47374'
-                  : 'https://www.google.com/maps/dir/?api=1&destination=3551+E+Main+St,+Richmond,+IN+47374'
+                  ? 'https://maps.apple.com/?daddr=530+S+Ninth+Street,+Richmond,+IN+47374'
+                  : 'https://www.google.com/maps/dir/?api=1&destination=530+S+Ninth+Street,+Richmond,+IN+47374'
               }
               target='_blank'
               rel='noopener noreferrer'
             >
-              3551 E Main St, Richmond, IN 47374
+              530 S Ninth Street, Richmond, IN 47374
             </a>
           </p>
         </Card>
