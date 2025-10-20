@@ -39,7 +39,7 @@
     "sass": "^1.93.2"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.5.3",
+    "@storybook/addon-actions": "^9.0.8",
     "@storybook/addon-essentials": "^6.5.3",
     "@storybook/addon-interactions": "^6.5.3",
     "@storybook/addon-links": "^6.5.3",
