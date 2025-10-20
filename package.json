@@ -51,7 +51,7 @@
     "@storybook/testing-library": "^0.0.11",
     "chromatic": "^6.5.4",
     "gh-pages": "^3.2.3",
-    "netlify-cli": "^10.8.0",
+    "netlify-cli": "^23.9.1",
     "storybook-addon-gatsby": "^0.0.5"
   }
 }
